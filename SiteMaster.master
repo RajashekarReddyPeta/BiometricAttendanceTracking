@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SiteMaster.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="top">
+<form runat="server">
+ 
+<div id="header-wrapper">
+	<div id="header-wrapper-2">
+		<div class="center-wrapper">
+ 
+			<div id="header">
+ 
+				<div id="logo">
+					<h1 id="site-title"><a href="#">Biometric Attendance for Colleges</a></h1>
+				</div>
+ 
+				<div id="help-wrapper">
+					<div id="help">
+
+                        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Login.aspx">Login</asp:HyperLink> <span class="text-separator">&nbsp&nbsp|&nbsp&nbsp</span> 
+                        <asp:HyperLink ID="HyperLink8" runat="server">Help</asp:HyperLink> <span class="text-separator">&nbsp&nbsp|&nbsp&nbsp</span> 
+                        <asp:HyperLink ID="HyperLink9" runat="server">About us</asp:HyperLink>
+ 
+					</div>
+				</div>
+ 
+			</div>
+ 
+		</div>
+	</div>
+</div>
+ 
+<div id="navigation-wrapper">
+	<div id="navigation-wrapper-2">
+		<div class="center-wrapper">
+	
+			<div id="navigation">
+ 
+				<ul class="tabbed">
+					<li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/User/Default.aspx">Home</asp:HyperLink></li>
+					<li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/User/Attendance.aspx">Attendance</asp:HyperLink></li>
+					<li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/User/Classes.aspx">Classes</asp:HyperLink></li>				
+					<li><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/User/Students.aspx">Students</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/User/Timetable.aspx">Timetable</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Admin/Default.aspx?Type=admin" Visible="False">Admin</asp:HyperLink></li>
+				</ul>
+ 
+				<div class="clearer">&nbsp;</div>
+ 
+			</div>
+ 
+		</div>
+	</div>
+</div>
+ 
+<div id="content-wrapper">
+	<div class="center-wrapper">
+		
+		<div class="content">
+ 
+			<div id="main">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+                </asp:ContentPlaceHolder>
+ 
+			</div>
+ 
+		</div>
+ 
+	</div>
+</div>
+ 
+<div id="footer-wrapper">
+ 
+	<div class="center-wrapper">
+ 
+		<div id="footer">
+ 
+			<div class="left">
+             &copy; 2011 CMR Institute of Technology - CSE Department
+		    </div>
+ 
+			<div class="right">
+				<a href="#">Top ^</a>
+			</div>
+			
+			<div class="clearer">&nbsp;</div>
+ 
+		</div>
+ 
+	</div>
+ 
+</div>
+ 
+<div id="bottom">
+ 
+	<div class="center-wrapper">
+ 		
+		<div class="clearer">&nbsp;</div>
+ 
+	</div>
+ 
+</div>
+ </form>
+</body>
+
+</html>

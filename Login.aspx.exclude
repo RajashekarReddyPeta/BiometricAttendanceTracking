@@ -1,0 +1,47 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/SiteMaster.master" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="login" Title="Untitled Page" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <style type="text/css">
+        .style1
+        {
+            width: 172px;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+    <table class="table">
+        <tr>
+            <td class="style2">
+                <asp:Label ID="Label1" runat="server" Text="UserName"></asp:Label>
+            </td>
+            <td class="style1">
+                <asp:TextBox ID="txtusername" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td class="style3">
+                Password</td>
+            <td class="style1">
+                <asp:TextBox ID="txtpassword" runat="server" TextMode="Password"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td class="style3">
+                &nbsp;
+                <asp:Button ID="btnlogin" runat="server" onclick="btnlogin_Click" 
+                    Text="Login" />
+            </td>
+            <td class="style1">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="btncancel" runat="server" Text="Cancel" 
+                    onclick="btncancel_Click" />
+            </td>
+        </tr>
+      
+    </table>
+    <br />
+</asp:Content>
+
+
+
